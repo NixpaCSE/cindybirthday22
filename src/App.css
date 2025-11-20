@@ -1,0 +1,313 @@
+.app {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 2;
+}
+
+.content {
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+}
+
+.section {
+  margin: 40px 0;
+}
+
+/* Floating Hearts */
+.hearts-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.heart {
+  position: absolute;
+  font-size: 20px;
+  color: rgba(255, 182, 193, 0.6);
+}
+
+/* Birthday Cake */
+.cake {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.candle {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 30px;
+  background: #fff;
+  border-radius: 4px;
+  z-index: 10;
+}
+
+.flame {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 20px;
+  background: linear-gradient(to top, #ff6b6b, #ffd93d);
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+.cake-layer {
+  width: 200px;
+  height: 60px;
+  border-radius: 10px;
+  margin: 5px auto;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.layer-1 {
+  background: linear-gradient(135deg, #ffb3d9, #ff91c4);
+  width: 180px;
+}
+
+.layer-2 {
+  background: linear-gradient(135deg, #ff91c4, #ff6bb3);
+  width: 200px;
+}
+
+.layer-3 {
+  background: linear-gradient(135deg, #ff6bb3, #ff4da6);
+  width: 220px;
+}
+
+.frosting-top {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 190px;
+  height: 20px;
+  background: linear-gradient(135deg, #ffb3d9, #b3ffd9);
+  border-radius: 50px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  z-index: 5;
+}
+
+/* Typography */
+.title {
+  font-family: 'Fredoka One', cursive;
+  font-size: 3.5rem;
+  color: #ff4da6;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-family: 'Comfortaa', cursive;
+  font-size: 1.5rem;
+  color: #ff6bb3;
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+.message {
+  font-family: 'Fredoka One', cursive;
+  font-size: 2.5rem;
+  color: #ff4da6;
+  margin: 30px 0;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+  letter-spacing: 1px;
+}
+
+.description {
+  font-family: 'Comfortaa', cursive;
+  font-size: 1.3rem;
+  color: #ff6bb3;
+  margin-top: 15px;
+  font-weight: 700;
+}
+
+.question {
+  font-family: 'Fredoka One', cursive;
+  font-size: 2.5rem;
+  color: #ff4da6;
+  margin: 40px 0 30px 0;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+  letter-spacing: 1px;
+}
+
+/* Buttons */
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  position: relative;
+  min-height: 100px;
+  width: 100%;
+  padding: 20px;
+}
+
+.btn {
+  padding: 20px 50px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  font-family: 'Fredoka One', cursive;
+  letter-spacing: 1px;
+  z-index: 10;
+}
+
+.btn-yes {
+  background: linear-gradient(135deg, #ff6bb3, #ff4da6);
+  color: white;
+}
+
+.btn-yes:hover {
+  box-shadow: 0 8px 20px rgba(255, 77, 166, 0.4);
+}
+
+.btn-no {
+  background: linear-gradient(135deg, #b3ffd9, #80ffbf);
+  color: #ff4da6;
+}
+
+.btn-no:hover {
+  box-shadow: 0 8px 20px rgba(179, 255, 217, 0.4);
+}
+
+/* Celebration Section */
+.celebration-section {
+  margin-top: 40px;
+}
+
+.celebration {
+  font-family: 'Fredoka One', cursive;
+  font-size: 3rem;
+  color: #ff4da6;
+  margin: 30px 0;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+  letter-spacing: 1px;
+}
+
+.celebration-text {
+  font-family: 'Comfortaa', cursive;
+  font-size: 1.5rem;
+  color: #ff6bb3;
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+/* Confetti */
+.confetti-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.confetti {
+  position: absolute;
+  border-radius: 2px;
+}
+
+/* Picture Frame */
+.picture-frame {
+  margin: 40px auto;
+  max-width: 500px;
+  padding: 20px;
+}
+
+.frame-inner {
+  position: relative;
+  padding: 15px;
+  background: linear-gradient(135deg, #ffb3d9, #b3ffd9);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.frame-border {
+  position: relative;
+  padding: 20px;
+  background: linear-gradient(135deg, #ff91c4, #80ffbf);
+  border-radius: 15px;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.frame-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .message, .question {
+    font-size: 2rem;
+  }
+  
+  .btn {
+    padding: 15px 40px;
+    font-size: 1.2rem;
+  }
+  
+  .cake-layer {
+    width: 150px;
+  }
+  
+  .layer-1 {
+    width: 130px;
+  }
+  
+  .layer-3 {
+    width: 170px;
+  }
+  
+  .frosting-top {
+    width: 140px;
+  }
+  
+  .picture-frame {
+    max-width: 90%;
+    padding: 15px;
+  }
+  
+  .frame-inner {
+    padding: 10px;
+  }
+  
+  .frame-border {
+    padding: 15px;
+  }
+}
